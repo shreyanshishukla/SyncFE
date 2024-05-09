@@ -1,0 +1,300 @@
+.rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+}
+
+.noto-sans-font {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.clock-logo {
+  height: 30px;
+  width: 30px;
+  justify-self: center;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+svg {
+  color: wheat;
+}
+.header,
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header {
+  justify-content: space-between;
+}
+.menu {
+  justify-content: space-around;
+
+  flex-grow: 0.3;
+}
+
+.auth-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-grow: 0.02;
+
+  align-items: center;
+}
+body {
+  padding: 50px;
+  border: solid 10px black;
+  border-radius: 20px;
+}
+.login-btn {
+  font-size: large;
+  font-weight: 550;
+  color: black;
+  border: none;
+  background-color: inherit;
+  margin-right: 10px;
+}
+.sign-up {
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(70, 69, 69);
+  font-size: large;
+  font-weight: 350;
+  padding: 10px;
+}
+.homepage-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+.homepage-left {
+  width: 36%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.homepage-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.large-400 {
+  font-size: 6vh;
+  font-weight: 400;
+}
+.wrap-to-next-line {
+  overflow-wrap: break-word;
+}
+.med-370 {
+  font-size: 2.2vh;
+  font-weight: 370;
+}
+.homepage-time {
+  display: flex;
+  font-size: xx-large;
+  font-weight: 400;
+}
+
+.time-data {
+  border: solid 2px black;
+  border-radius: 5px;
+  background-color: yellow;
+  padding: 10px;
+}
+.time-colon {
+  padding: 10px;
+}
+.homepage-calendar {
+  margin-top: 4px;
+}
+.calendar-rows {
+  display: flex;
+}
+.calendar-element {
+  padding: 14px;
+  margin: 4px;
+  font-size: xx-large;
+  font-weight: 400;
+  color: rgb(121, 119, 117);
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  filter: blur(0.8px);
+}
+.calendar-element-hover:hover {
+  transform: scale(2);
+  filter: blur(0px);
+  z-index: 2;
+}
+.margin-60 {
+  margin-top: 30px;
+}
+.sign-up-arrow {
+  display: none;
+}
+.sign-up:hover .sign-up-arrow {
+  display: inline;
+  justify-content: center;
+  margin-left: 10px;
+}
+.login-modal {
+  height: max-content;
+  width: 50vw;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  background-color: rgb(40, 14, 14);
+  border: 15px solid rgb(179, 156, 201);
+
+  color: white;
+  border-radius: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.signup-modal {
+  height: max-content;
+  width: 50vw;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  background-color: white;
+  border: solid 6px black;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.signup-modal > h2,
+.login-modal > h2 {
+  margin: 30px;
+}
+.signup-modal > div,
+.login-modal > div {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.signup-modal > button,
+.login-modal > button {
+  margin: 30px;
+}
+.auth-input {
+  height: 40px;
+  width: 200px;
+}
+.auth-label {
+  margin-bottom: 5px;
+}
+img {
+  background-color: inherit;
+}
+button {
+  background-color: inherit;
+  border: none;
+  color: inherit;
+}
+.btn {
+  border: 2px solid rgb(134, 108, 108);
+  padding: 10px;
+  border-radius: 3px;
+}
+.close {
+  position: absolute;
+  right: 3px;
+  top: 0px;
+}
+.close > img {
+  height: 30px;
+  width: 30px;
+}
+.create-event-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.create-event-wrapper > div {
+  margin: 5px;
+}
+.schedules {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: max-content;
+  width: max-content;
+}
+.event-data {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border: solid 1px black;
+  width: 85vw;
+  padding: 20px;
+  position: relative;
+}
+.schedule-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: max-content;
+}
+.schedule-title {
+  font-size: xx-large;
+  font-weight: 500;
+}
+.event-name {
+  font-size: large;
+  font-weight: 400;
+}
+.event-name {
+  font-size: larger;
+  font-weight: 500;
+}
+.event-date {
+  font-size: medium;
+  font-weight: 400;
+  display: flex;
+  margin: 4px;
+}
+.event-date > div {
+  margin-right: 10px;
+  font-weight: 500;
+}
+.row-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.event-description {
+  background-color: antiquewhite;
+  padding: 10px;
+}
+.down {
+  position: absolute;
+  right: 3px;
+  top: 4px;
+}
+.down > img {
+  width: 20px;
+  height: 20px;
+}
